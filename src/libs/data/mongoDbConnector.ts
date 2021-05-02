@@ -1,5 +1,5 @@
 import { createConnection } from "mongoose";
-import { MONGO_URL } from "../constants";
+import { MONGO_URL } from "./constants";
 
 const getDbConnection = async () => {
   const conn = await createConnection(MONGO_URL, {

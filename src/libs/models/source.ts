@@ -17,7 +17,7 @@ const SOURCE_SCHEMA = {
 };
 
 const createSourceModel = async (
-  cachedSourceModels?: cachedModelMap
+  cachedSourceModels: cachedModelMap | null
 ): Promise<cachedModelMap> => {
   const sourceModel = createModels(
     {
